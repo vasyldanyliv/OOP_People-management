@@ -1,3 +1,4 @@
+var self;
 function User(name, sex, birthD, address, phone, email) {
  SuperUser.call(this);
  self = this;
@@ -30,5 +31,4 @@ User.prototype.createNewRow = function (createInstanceOfUser) {
  cell4.innerText = createInstanceOfUser.address;
  cell5.innerText = createInstanceOfUser.phone;
  cell6.innerText = createInstanceOfUser.email;
-
 };

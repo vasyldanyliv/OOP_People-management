@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Cantora+One" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
 </head>
 <body>
 <div class="wrapper">
@@ -27,7 +29,7 @@
             </div>
             <span>Birth date</span>
             <div class="user-info">
-                <input class="user-birth" type="date"/>
+                <input type="text" class="user-birth" placeholder="dd/mm/yy"/>
             </div>
             <span>Address</span>
             <div class="user-info">
@@ -62,6 +64,8 @@
         </tbody>
     </table>
 </div>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="scripts/SuperUser.js"></script>
 <script src="scripts/User.js"></script>
 <script src="scripts/main.js"></script>
