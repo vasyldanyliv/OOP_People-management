@@ -1,0 +1,88 @@
+
+body{
+    font-family: 'Cantora One', sans-serif;
+    background: rgb(93, 105, 122);
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+fieldset {
+    background: rgb(107, 121, 142);
+    height:63vh;
+    width:30%;
+    border-radius: 6px;
+    border: 1px solid rgb(115, 134, 163);
+}
+
+input,select {
+    width:200px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 12px;
+    line-height: 2;
+    color: #666;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.button{
+    margin-top:12px;
+}
+
+#user{
+    background-color: #ddd;
+}
+input:hover {
+    background-color: #d9edf7;
+    cursor: pointer;
+}
+
+table {
+    width:70%;
+    cursor: pointer;
+    border-collapse: collapse;
+}
+
+table#users> thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+th,td {
+    border: 2px solid #ddd;
+    text-align: center;
+    font-weight: bold;
+    height:25px;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr:hover {
+    background-color: #d9edf7;
+}
+
+.hidden{
+    visibility:hidden;
+}
+
+.visible{
+    visibility:visible;
+}

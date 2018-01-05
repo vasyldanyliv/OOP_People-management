@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP_People-Management</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Cantora+One" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <h1>People management</h1>
+    <form class="add-user">
+        <fieldset>
+            <legend>Add new user</legend>
+            <span>Name</span>
+            <div class="user-info">
+                <input class="user-name" type="text"  placeholder="John" />
+            </div>
+            <span>Sex</span>
+            <div class="user-info">
+                <select class="user-sex" name="type">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <span>Birth date</span>
+            <div class="user-info">
+                <input class="user-birth" type="date"/>
+            </div>
+            <span>Address</span>
+            <div class="user-info">
+                <input class="user-address" type="text"  placeholder="Lviv" />
+            </div>
+            <span>Phone</span>
+            <div class="user-info">
+                <input class="user-phone" type="text"  placeholder="0(xx)-xxx-xx-xx" />
+            </div>
+            <span>Email</span>
+            <div class="user-info">
+                <input class="user-email" type="text"  placeholder="johnsmith@yahoo.com" />
+            </div>
+
+            <div class="user-info">
+                <input class="button" type="button" value="Save" />
+            </div>
+        </fieldset>
+    </form>
+    <table id="users">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Sex</th>
+            <th>BirthD</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+</div>
+<script src="scripts/SuperUser.js"></script>
+<script src="scripts/User.js"></script>
+<script src="scripts/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.js"></script>
+</body>
+</html>
