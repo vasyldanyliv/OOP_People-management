@@ -4,11 +4,6 @@ var userArray = [];
 var buttonSave = document.querySelector("input[class='button']");
 buttonSave.addEventListener('click', addUserToTableList);
 
-// Birthday picker
-(function() {
- $('.user-birth').datepicker({maxDate:'01/01/2015', dateFormat: 'dd/mm/yy'}).val();
-})();
-
 function validateEnterData(nameV, phoneV, emailV, birthDV, addressV) {
  var regExpForName = /^[a-zA-Z\-]+$/;
  var regExpForEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -49,10 +44,15 @@ function clearInputField() {
  form.reset();
 }
 
+// Birthday picker
+$( window ).load(function() {
+ $('.user-birth').datepicker({maxDate:'01/01/2015', dateFormat: 'dd/mm/yy'}).val();
+});
+
 function addUserToTableList() {
  var name = document.querySelector("input[class='user-name']").value;
  var sex = document.querySelector('.user-sex').value;
- var birthD = $('.user-birth').datepicker({maxDate:'01/01/2015', dateFormat: 'dd/mm/yy' }).val();
+ var birthD = $('.user-birth').datepicker({maxDate: '01/01/2015', dateFormat: 'dd/mm/yy'}).val();
  var address = document.querySelector("input[class='user-address']").value;
  var phone = document.querySelector("input[class='user-phone']").value;
  var email = document.querySelector("input[class='user-email']").value;
